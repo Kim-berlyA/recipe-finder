@@ -6,6 +6,7 @@ const searchBtn = document.getElementById('searchButton');
 const message = document.getElementById('message');
 
 const recipeDetails = document.getElementById('recipeDetails');
+const recipeImg = document.getElementById('recipeImg');
 const recipeTitle = document.getElementById('recipeTitle');
 const recipeDescription = document.getElementById('recipeDescription');
 const ingredientsList = document.getElementById('ingredientsList');
@@ -50,6 +51,7 @@ function generateRecipeHTML() {
     
     const recipe = await fetchRecipe(title);
 
+    recipeImg.innerHTML = recipe.image;
     recipeTitle.textContent = recipe.title;
     recipeDescription.textContent = recipe.description;
 
@@ -93,7 +95,8 @@ randomRecipe.addEventListener('click', () => {
     const title = recipes[randomNumber].title;
     
     const recipe = await fetchRecipe(title);
-
+    
+    recipeImg.innerHTML = recipe.image;
     recipeTitle.textContent = recipe.title;
     recipeDescription.textContent = recipe.description;
 

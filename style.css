@@ -87,8 +87,36 @@ body {
   height: 20px;
 }
 
+.random-recipe-button {
+  font-size: 1rem;
+  color: white;
+  margin: 10px;
+  outline: 0;
+  border: none;
+  padding: 15px;
+  border-radius: 50px;
+  background: linear-gradient(135deg, #ff7a18, #f34408);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  transition: all .2s ease-in;
+}
+
+.random-recipe-button:hover {
+  transform: translateY(-2px);
+}
+
+.random-recipe-button:active {
+  transform: translateY(0px);
+}
+
+.message {
+  margin-bottom: 10px;
+  color: #f34408;
+  font-weight: 400;
+}
+
 .recipe-details {
   width: 80%;
+  margin-bottom: 25px;
 }
 
 .recipe-img-container {
@@ -180,25 +208,4 @@ hr {
 
 .hidden {
   display: none;
-}
-
-.random-recipe-button {
-  font-size: 1rem;
-  color: white;
-  margin: 10px;
-  outline: 0;
-  border: none;
-  padding: 15px;
-  border-radius: 50px;
-  background: linear-gradient(135deg, #ff7a18, #f34408);
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  transition: all .2s ease-in;
-}
-
-.random-recipe-button:hover {
-  transform: translateY(-2px);
-}
-
-.random-recipe-button:active {
-  transform: translateY(0px);
 }

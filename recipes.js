@@ -1,6 +1,7 @@
 export const recipes = [  
-  // SOUPS, STEWS AND SAUCES
+  //SWALLOWS, SOUPS, STEWS AND SAUCES
   { 
+    image: '<img src="img/ogbono.jpg" alt="food" id="recipeImg" class="recipe-img" />',
     title: "Ogbono Soup", 
     description: "Draw soup made with ogbono seeds and okra, very thick and slippery, great with pounded yam, eba or fufu.", 
     ingredients: [ 
@@ -27,6 +28,7 @@ export const recipes = [
     ] 
   },
   { 
+    image: '<img src="img/egusi.jpg" alt="food" id="recipeImg" class="recipe-img" />', 
     title: "Egusi Soup",
     description: "A thick soup made from melon seeds, often cooked with leafy vegetables and assorted meats.",
     ingredients: [
@@ -47,6 +49,7 @@ export const recipes = [
     ]
   }, 
   { 
+    image: '<img src="img/efo.jpeg" alt="food" id="recipeImg" class="recipe-img" />', 
     title: "Efo Riro", 
     description: "A savory Yoruba spinach-based vegetable soup, full of beef, seafood, peppers and traditional flavorings.", 
     ingredients: [ 
@@ -70,6 +73,7 @@ export const recipes = [
     ] 
   }, 
   { 
+    image: '<img src="img/banga.jpeg" alt="food" id="recipeImg" class="recipe-img" />', 
     title: "Banga Soup", 
     description: "Delta State palm fruit kernel soup flavored with unique 'banga spice', typically eaten with starch, fufu or eba.", 
     ingredients: [ 
@@ -89,7 +93,8 @@ export const recipes = [
       "Remove oburunbebe, serve thickened soup hot." 
     ] 
   },
-  {
+  { 
+    image: '<img src="img/nsala.jpeg" alt="food" id="recipeImg" class="recipe-img" />', 
     title: "Nsala (White Soup)", 
     description: "A light yam-thickened soup traditionally made with catfish.", 
     ingredients: [ 
@@ -106,6 +111,7 @@ export const recipes = [
     ] 
   },
   { 
+    image: '<img src="img/oha.jpeg" alt="food" id="recipeImg" class="recipe-img" />', 
     title: "Oha Soup", 
     description: "A southern Nigerian delicacy with oha leaves, cocoyam and meats, served with eba or fufu.", 
     ingredients: [ 
@@ -133,6 +139,7 @@ export const recipes = [
     ]
   }, 
   { 
+    image: '<img src="img/mixed-okra.jpeg" alt="food" id="recipeImg" class="recipe-img" />', 
     title: "Mixed Okra Soup (Ila Alasepo)", 
     description: "Yoruba-style 'Ila-alasepo', a mixed okra soup with assorted meat and fish, enjoyed with Nigerian swallow foods.", 
     ingredients: [ 
@@ -154,7 +161,8 @@ export const recipes = [
       "Serve with eba, fufu or yam." 
     ] 
   },
-  {
+  { 
+    image: '<img src="img/ofada-stew.jpeg" alt="food" id="recipeImg" class="recipe-img" />', 
     title: "Ofada Stew (Ayamase)", 
     description: "Fiery green/brown pepper stew cooked in bleached palm oil, paired with Ofada rice.", 
     ingredients: [ 
@@ -172,6 +180,7 @@ export const recipes = [
     ] 
   }, 
   { 
+    image: '<img src="img/nkwobi.jpg" alt="food" id="recipeImg" class="recipe-img" />', 
     title: "Nkwobi with Cow leg", 
     description: "Rich, spicy cow leg sauce served in a traditional bowl, a delicacy from Eastern Nigeria.", 
     ingredients: [ 
@@ -196,6 +205,7 @@ export const recipes = [
     ] 
   }, 
   { 
+    image: '<img src="img/cat-fish.jpeg" alt="food" id="recipeImg" class="recipe-img" />', 
     title: "Cat Fish Pepper Soup", 
     description: "A warming, spicy Nigerian soup made with catfish and assorted meats and distinct traditional spices.", 
     ingredients: [ 
@@ -225,9 +235,118 @@ export const recipes = [
       "Check seasoning and serve hot." 
     ] 
   },
+  { 
+    image: '<img src="img/edikaikong.jpeg" alt="food" id="recipeImg" class="recipe-img" />', 
+    title: "Edikaikong", 
+    description: "Calabar’s famous vegetable soup brimming with assorted meat, seafood and native leafy greens, perfect with pounded yam.", 
+    ingredients: [ 
+      "1 tuber Yam", 
+      "400g Ugu/pumpkin leaves", 
+      "200g Waterleaves", 
+      "1kg boiled assorted meat", 
+      "200g Periwinkle", 
+      "200g pre-soaked Dried Stock Fish", 
+      "4 boiled Crabs and/or Snails", 
+      "100g Shrimps", 
+      "50g Crayfish", 
+      "300ml Palm oil", 
+      "1 large Onion", 
+      "1 large tomato", 
+      "2–3 red chilli peppers", 
+      "10g Locust beans", 
+      "Maggi and salt" 
+    ], 
+    steps: [ 
+      "Fry palm oil, add onions.", 
+      "Add blended pepper, cook.", 
+      "Add sliced waterleaves, cook.", 
+      "Add seafood, meats, stockfish, locust beans, seasoning. Stir.", 
+      "Add Ugu, a bit of water, stir. Cook briefly.", 
+      "Serve with Pounded yam." 
+    ] 
+  }, 
+  { 
+    image: '<img src="img/ofe-onugbu.jpg" alt="food" id="recipeImg" class="recipe-img" />', 
+    title: "Ofe Onugbu", 
+    description: "A hearty Igbo bitterleaf soup thickened with cocoyam and palm kernel, served with eba or fufu.", 
+    ingredients: [ 
+      "100g Palm kernel", 
+      "100g Periwinkle", 
+      "Shrimps", 
+      "Crayfish", 
+      "Bitter leaves", 
+      "100g Boiled seasoned Snail", 
+      "2–3 Boiled dried Stock fish", 
+      "2 smoked Stock fish", 
+      "200g Boiled seasoned beef/goat meat", 
+      "5 yellow chilli peppers", 
+      "1 oz Locust beans", 
+      "6–7 Cocoyam", 
+      "2–3 Maggi cubes", 
+      "Salt" 
+    ], 
+    steps: [ 
+      "Boil palm kernel and cocoyam till soft.", 
+      "Mash kernels, extract oil.", 
+      "Add palm oil to pan, thicken with mashed cocoyam, blend in pepper and all ingredients except bitter-leaf and periwinkle.", 
+      "Add periwinkle last, taste and adjust.", 
+      "Wash, slice bitterleaf, add and cook for 10 min.", 
+      "Serve with eba or fufu." 
+    ] 
+  }, 
+  { 
+    image: '<img src="img/fufu.jpg" alt="food" id="recipeImg" class="recipe-img" />', 
+    title: "Fufu", 
+    description: "Fermented cassava dough with a sour taste.", 
+    ingredients: ["Fufu flour or fermented cassava paste"], 
+    steps: [ 
+      "Mix flour with hot water and stir until smooth.", 
+      "Cook to desired consistency." 
+    ] 
+  }, 
+  { 
+    image: '<img src="img/amala.jpg" alt="food" id="recipeImg" class="recipe-img" />', 
+    title: "Amala, Gbegiri, Ewedu and Stew", 
+    description: "A Yoruba classic: amala (yam flour) paired with creamy bean (gbegiri) soup, slippery ewedu, and spicy stew.", 
+    ingredients: [ 
+      "300g Yam Flour (Elubo)", 
+      "100g Beans", 
+      "400g Ewedu vegetable", 
+      "8+ Red pepper", 
+      "10 Small Red Chilli Peppers", 
+      "7+ Fresh Tomatoes", 
+      "1 bottle palm oil", 
+      "20g Locust beans", 
+      "¼ oz Potassium salt", 
+      "450g Beef/Fish", 
+      "200g Snails", 
+      "50g Crayfish", 
+      "Maggi/Salt", 
+      "Other seasoning" 
+    ], 
+    steps: [ 
+      "Soak and peel beans, cook with potassium salt.", 
+      "Add palm oil, mash to creamy paste, season (Gbegiri).", 
+      "Blend and cook Ewedu with potassium salt, locust beans, crayfish, salt.", 
+      "Blend peppers, tomatoes, chillis, onions for stew. Fry with palm oil, seasoning.", 
+      "Add beef, fish, snails. Prepare amala with yam flour.", 
+      "Serve stew, gbegiri and ewedu over amala, garnish." 
+    ] 
+  }, 
+  { 
+    image: '<img src="img/semo.jpeg" alt="food" id="recipeImg" class="recipe-img" />', 
+    title: "Semovita", 
+    description: "Light, smooth swallow made from semolina.", 
+    ingredients: ["Semolina flour", "Hot water"], 
+    steps: [ 
+      "Gradually add semovita to boiling water.", 
+      "Stir until smooth, lump-free dough forms." 
+    ] 
+  },
 
   // RICE DISHES 
   { 
+    image: '<img src="img/ofada-rice.jpeg" alt="food" id="recipeImg" class="recipe-img" />', 
     title: "Ofada rice with Sauce", 
     description: "Native Ofada rice served with spicy, richly flavored sauce loaded with assorted meats and seafood.", 
     ingredients: [ 
@@ -253,6 +372,7 @@ export const recipes = [
     ] 
   }, 
   { 
+    image: '<img src="img/jollof-rice.jpeg" alt="food" id="recipeImg" class="recipe-img" />', 
     title: "Jollof Rice", 
     description: "A vibrant, spicy tomato rice dish central to Nigerian parties, often served with various proteins and fried plantain.", 
     ingredients: [ 
@@ -285,6 +405,7 @@ export const recipes = [
     ] 
   }, 
   { 
+    image: '<img src="img/coconut-rice.jpeg" alt="food" id="recipeImg" class="recipe-img" />', 
     title: "Coconut Rice with Grilled Chicken", 
     description: "A festive rice dish cooked in coconut extract, garnished with chicken and seafood, loved at parties.", 
     ingredients: [ 
@@ -312,6 +433,7 @@ export const recipes = [
     ] 
   }, 
   { 
+    image: '<img src="img/fried-rice.jpg" alt="food" id="recipeImg" class="recipe-img" />', 
     title: "Fried Rice", 
     description: "Stir-fried rice with vegetables, liver, and spices.", 
     ingredients: [ 
@@ -325,115 +447,11 @@ export const recipes = [
       "Stir-fry vegetables, liver, and seasoning.", 
       "Add rice and toss on high heat." 
     ] 
-  }, 
-
-  // SWALLOWS 
-  { 
-    title: "Edikai Kong with Pounded Yam", 
-    description: "Calabar’s famous vegetable soup brimming with assorted meat, seafood and native leafy greens, perfect with pounded yam.", 
-    ingredients: [ 
-      "1 tuber Yam", 
-      "400g Ugu/pumpkin leaves", 
-      "200g Waterleaves", 
-      "1kg boiled assorted meat", 
-      "200g Periwinkle", 
-      "200g pre-soaked Dried Stock Fish", 
-      "4 boiled Crabs and/or Snails", 
-      "100g Shrimps", 
-      "50g Crayfish", 
-      "300ml Palm oil", 
-      "1 large Onion", 
-      "1 large tomato", 
-      "2–3 red chilli peppers", 
-      "10g Locust beans", 
-      "Maggi and salt" 
-    ], 
-    steps: [ 
-      "Fry palm oil, add onions.", 
-      "Add blended pepper, cook.", 
-      "Add sliced waterleaves, cook.", 
-      "Add seafood, meats, stockfish, locust beans, seasoning. Stir.", 
-      "Add Ugu, a bit of water, stir. Cook briefly.", 
-      "Serve with Pounded yam." 
-    ] 
-  }, 
-  { 
-    title: "Ofe Onugba and Eba", 
-    description: "A hearty Igbo bitterleaf soup thickened with cocoyam and palm kernel, served with eba or fufu.", 
-    ingredients: [ 
-      "100g Palm kernel", 
-      "100g Periwinkle", 
-      "Shrimps", 
-      "Crayfish", 
-      "Bitter leaves", 
-      "100g Boiled seasoned Snail", 
-      "2–3 Boiled dried Stock fish", 
-      "2 smoked Stock fish", 
-      "200g Boiled seasoned beef/goat meat", 
-      "5 yellow chilli peppers", 
-      "1 oz Locust beans", 
-      "6–7 Cocoyam", 
-      "2–3 Maggi cubes", 
-      "Salt" 
-    ], 
-    steps: [ 
-      "Boil palm kernel and cocoyam till soft.", 
-      "Mash kernels, extract oil.", 
-      "Add palm oil to pan, thicken with mashed cocoyam, blend in pepper and all ingredients except bitter-leaf and periwinkle.", 
-      "Add periwinkle last, taste and adjust.", 
-      "Wash, slice bitterleaf, add and cook for 10 min.", 
-      "Serve with eba or fufu." 
-    ] 
-  }, 
-  { 
-    title: "Fufu", 
-    description: "Fermented cassava dough with a sour taste.", 
-    ingredients: ["Fufu flour or fermented cassava paste"], 
-    steps: [ 
-      "Mix flour with hot water and stir until smooth.", 
-      "Cook to desired consistency." 
-    ] 
-  }, 
-  { 
-    title: "Amala, Gbegiri, Ewedu and Stew", 
-    description: "A Yoruba classic: amala (yam flour) paired with creamy bean (gbegiri) soup, slippery ewedu, and spicy stew.", 
-    ingredients: [ 
-      "300g Yam Flour (Elubo)", 
-      "100g Beans", 
-      "400g Ewedu vegetable", 
-      "8+ Red pepper", 
-      "10 Small Red Chilli Peppers", 
-      "7+ Fresh Tomatoes", 
-      "1 bottle palm oil", 
-      "20g Locust beans", 
-      "¼ oz Potassium salt", 
-      "450g Beef/Fish", 
-      "200g Snails", 
-      "50g Crayfish", 
-      "Maggi/Salt", 
-      "Other seasoning" 
-    ], 
-    steps: [ 
-      "Soak and peel beans, cook with potassium salt.", 
-      "Add palm oil, mash to creamy paste, season (Gbegiri).", 
-      "Blend and cook Ewedu with potassium salt, locust beans, crayfish, salt.", 
-      "Blend peppers, tomatoes, chillis, onions for stew. Fry with palm oil, seasoning.", 
-      "Add beef, fish, snails. Prepare amala with yam flour.", 
-      "Serve stew, gbegiri and ewedu over amala, garnish." 
-    ] 
-  }, 
-  { 
-    title: "Semovita", 
-    description: "Light, smooth swallow made from semolina.", 
-    ingredients: ["Semolina flour", "Hot water"], 
-    steps: [ 
-      "Gradually add semovita to boiling water.", 
-      "Stir until smooth, lump-free dough forms." 
-    ] 
   },
 
   //SNACKS
-  {
+  { 
+    image: '<img src="img/puff-puff.jpeg" alt="food" id="recipeImg" class="recipe-img" />', 
     title: "Puff-Puff", 
     description: "Sweet fried dough balls, soft inside and golden outside.", 
     ingredients: [ 
@@ -450,6 +468,7 @@ export const recipes = [
     ] 
   }, 
   { 
+    image: '<img src="img/akara.jpeg" alt="food" id="recipeImg" class="recipe-img" />', 
     title: "Akara", 
     description: "Fried bean cakes, crispy outside and soft inside.", 
     ingredients: [ 
@@ -462,7 +481,8 @@ export const recipes = [
       "Whisk batter, fry spoonfuls in hot oil until golden." 
     ] 
   }, 
-  {
+  { 
+    image: '<img src="img/bole.jpg" alt="food" id="recipeImg" class="recipe-img" />', 
     title: "Bole", 
     description: "Charcoal-grilled plantain often served with groundnut sauce.", 
     ingredients: ["Ripe or semi-ripe plantains"], 
@@ -472,6 +492,7 @@ export const recipes = [
     ] 
   },
   { 
+    image: '<img src="img/suya.jpeg" alt="food" id="recipeImg" class="recipe-img" />', 
     title: "Suya", 
     description: "Spicy beef skewers coated with yaji spice, grilled over open flame.", 
     ingredients: [ 
@@ -485,6 +506,7 @@ export const recipes = [
     ] 
   }, 
   { 
+    image: '<img src="img/meat-pie.jpeg" alt="food" id="recipeImg" class="recipe-img" />', 
     title: "Meat Pie", 
     description: "Buttery pastry filled with minced beef and vegetables.", 
     ingredients: [ 
@@ -498,7 +520,8 @@ export const recipes = [
       "Fill dough, seal edges, and bake until golden." 
     ] 
   }, 
-  {
+  { 
+    image: '<img src="img/chin-chin.jpg" alt="food" id="recipeImg" class="recipe-img" />', 
     title: "Chin Chin", 
     description: "Crunchy sweet fried dough snack.", 
     ingredients: [ 
@@ -514,6 +537,7 @@ export const recipes = [
 
   //PROTEINS AND SIDES
   { 
+    image: '<img src="img/moi-moi.jpg" alt="food" id="recipeImg" class="recipe-img" />', 
     title: "Moi Moi (Beans Cake)", 
     description: "Classic steamed bean pudding with vegetables and protein, loved for breakfast or as a party meal in Nigeria.", 
     ingredients: [ 
@@ -540,6 +564,7 @@ export const recipes = [
     ] 
   }, 
   { 
+    image: '<img src="img/asun.jpeg" alt="food" id="recipeImg" class="recipe-img" />', 
     title: "Asun (Goat Meat Barbeque)", 
     description: "Traditional spicy, smoky goat meat barbeque often cooked for celebrations; goes well with chilled drinks.", 
     ingredients: [ 
@@ -560,6 +585,7 @@ export const recipes = [
     ] 
   }, 
   { 
+    image: '<img src="img/isi-ewu.jpg" alt="food" id="recipeImg" class="recipe-img" />', 
     title: "Isiewu (Spicy Goat Head)", 
     description: "Spicy goat head delicacy, often served as a sauce or with peppersoup in the east of Nigeria.", 
     ingredients: [ 
@@ -580,6 +606,7 @@ export const recipes = [
     ] 
   },
   { 
+    image: '<img src="img/beans.jpeg" alt="food" id="recipeImg" class="recipe-img" />', 
     title: "Beans Porridge (Ewa Riro)", 
     description: "Slow-cooked beans in palm oil and pepper sauce.", 
     ingredients: [ 
@@ -596,32 +623,8 @@ export const recipes = [
   },
 
   //OTHERS
-  {
-    title: "Boiled Yam with Garden Egg, Shrimps, Eggs and Smoked Fish", 
-    description: "Yam dish enriched with garden eggs, eggs, shrimps and smoked fish, ideal for breakfast, lunch or dinner.", 
-    ingredients: [ 
-      "1 tuber Yam", 
-      "6 Garden eggs", 
-      "6+ Chicken eggs", 
-      "2–3 Fresh tomatoes", 
-      "1 large Onion", 
-      "3 small red chilli peppers", 
-      "1 ½ cooking spoon Vegetable oil", 
-      "20g Shrimps", 
-      "1 Smoked Fish", 
-      "1 can Sardine or Corn beef (optional)", 
-      "Seasoning (thyme, Maggi, curry)" 
-    ], 
-    steps: [ 
-      "Slice yam, remove skin, boil with water, sugar, salt, and garden eggs.", 
-      "Mash boiled garden eggs.", 
-      "Fry onions, tomatoes, peppers in vegetable oil.", 
-      "Add sardine/corn beef, smoked fish, shrimps, garden eggs.", 
-      "Whisk eggs with seasoning, add with scent leaves, fry and stir.", 
-      "Cook yam till tender, serve." 
-    ] 
-  }, 
   { 
+    image: '<img src="img/yam-porridge.jpeg" alt="food" id="recipeImg" class="recipe-img" />', 
     title: "Yam Porridge", 
     description: "A filling and hearty Nigerian yam alternative to plantain porridge, spiced with vegetables and seafood.", 
     ingredients: [ 
@@ -632,6 +635,7 @@ export const recipes = [
     ] 
   },
   { 
+    image: '<img src="img/plantain-porridge.jpg" alt="food" id="recipeImg" class="recipe-img" />', 
     title: "Unripe/Green Plantain Porridge", 
     description: "A healthy, vitamin-rich one-pot porridge of unripe plantain, shrimps, snails, veggies and spices for all ages.", 
     ingredients: [ 
@@ -656,5 +660,35 @@ export const recipes = [
       "Add ugu, taste seasoning.", 
       "Serve with fried/boiled snails, sauce." 
     ] 
-  }
+  },
+  { 
+    image: '<img src="img/spaghetti.jpg" alt="food" id="recipeImg" class="recipe-img" />', 
+    title: "Jollof Spaghetti", 
+    description: "Spaghetti cooked in a tomato sauce", 
+    ingredients: [ 
+      "1 lb usually 1 box thin spaghetti", 
+      "2 3/4 cups chicken stock I used a home made stock", 
+      "5 large about 2 lbs plum/ roma tomatoes", 
+      "1 large onion", 
+      "1 red bell pepper", 
+      "2 scotch bonnet peppers", 
+      "3 tbsp vegetable oil", 
+      "2 tsp bouillon powder", 
+      "1 tsp dried thyme", 
+      "1 tsp curry powder", 
+      "A small handful of basil optional", 
+      "Salt to taste" 
+    ], 
+    steps: [ 
+      "Blend the tomatoes, onions, and peppers until smooth.", 
+      "Boil down the tomato sauce on in a pot on medium- high heat until the sauce is about half the amount, and has thickened significantly to look like a paste. This takes about 15-20 minutes, depending on how high the heat is.", 
+      "Be sure to stir the sauce occasionally to prevent it from burning.", 
+      "Once the sauce is reduced, pour in the stock, oil, thyme, curry powder and bouillon. At this stage, taste the sauce and adjust for salt.", 
+      "Add in the spaghetti, pushing it down or breaking it to fit into the pot.", 
+      "Cover and allow to cook for 5 minutes on low-medium heat.", 
+      "After 5 minutes, the pasta should be soft enough to stir. Stir, turn down the heat to low, and allow to cook for another 8-10 minutes.", 
+      "After 8 minutes, stir, and the pasta should be cooked. If it is not, add in a splash (about 1/4 cup) of water and continue to cook for another 5 minutes.", 
+      "If you choose to add basil, add it in at this stage, and then serve." 
+    ] 
+  } 
 ];
