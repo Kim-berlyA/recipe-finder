@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="img/cooking (1).png">
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nigerian Recipe Finder</title>
-  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="app">
@@ -14,18 +16,22 @@
     </div>
 
     <div class="search">
-      <input type="text" placeholder="Search for a dish..." class="search-input" />
-      <button type="button" class="search-button">
+      <input type="text" placeholder="Search for a dish..." id="searchInput" class="search-input" />
+      <button type="button" id="searchButton" class="search-button">
         <img src="img/search.png" alt="search icon" class="search-icon" />
       </button>
     </div>
 
-    <div class="recipe-details">
-      <div class="recipe-title">Jollof Rice</div>
-      <div class="recipe-description">Smoky tomato rice dish central to Nigerian Parties</div>
+    <button id="randomRecipe" class="random-recipe-button">Generate Random Recipe</button>
+    
+    <div id="message" class="message hidden"></div>
+
+    <div id="recipeDetails" class="hidden recipe-details">
+      <div id="recipeTitle" class="recipe-title">Jollof Rice</div>
+      <div id="recipeDescription" class="recipe-description">Smoky tomato rice dish central to Nigerian Parties</div>
 
       <div class="recipe-img-container">
-        <img src="img/jollof-rice.jpeg" alt="food" class="recipe-img" />
+        <img src="img/jollof-rice.jpeg" alt="food" id="recipeImg" class="recipe-img" />
       </div>
 
       <div class="ingredients section">
@@ -33,7 +39,7 @@
           <img src="img/cooking.png" alt="cooking image" class="section-icon">Ingredients
         </div>
         <hr />
-        <ul class="ingredients-list">
+        <ul id="ingredientsList" class="ingredients-list">
           <li class="ingredient-item">500g Long grain rice</li>
           <li class="ingredient-item">3 spoons Margarine/Vegetable oil</li>
           <li class="ingredient-item">2 Large Onions</li>
@@ -59,7 +65,7 @@
           <img src="img/chef.png" alt="chef image" class="section-icon">Instructions
         </div>
         <hr />
-        <ol class="instructions-list">
+        <ol id="instructionsList" class="instructions-list">
           <li class="instruction-step">Heat butter/oil, fry onions, garlic, tomato purée, chillis, ginger, seasoning.</li>
           <li class="instruction-step">Add rice, bay leaf.</li>
           <li class="instruction-step">Boil shrimps, crab, snails, season, add peas.</li>

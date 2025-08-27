@@ -9,6 +9,7 @@
 body {
   font-family: 'Open Sans', sans-serif;
   background: #e3e3e3;
+  overflow-y: scroll;
 }
 
 .app {
@@ -26,7 +27,7 @@ body {
 
 .header {
   text-align: center;
-  padding: 2rem 1rem;
+  padding: 2rem 1.5rem;
   width: 100%;
   background: linear-gradient(135deg, #ff7a18, #f34408);
 }
@@ -134,8 +135,8 @@ hr {
 }
 
 .section-icon {
-  width: 2.25rem;
-  height: 2.25rem;
+  width: 1.5rem;
+  height: 1.5rem;
   margin-right: 5px;
 }
 
@@ -175,4 +176,29 @@ hr {
   position: absolute;
   top: 0;
   left: 0;
+}
+
+.hidden {
+  display: none;
+}
+
+.random-recipe-button {
+  font-size: 1rem;
+  color: white;
+  margin: 10px;
+  outline: 0;
+  border: none;
+  padding: 15px;
+  border-radius: 50px;
+  background: linear-gradient(135deg, #ff7a18, #f34408);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  transition: all .2s ease-in;
+}
+
+.random-recipe-button:hover {
+  transform: translateY(-2px);
+}
+
+.random-recipe-button:active {
+  transform: translateY(0px);
 }
