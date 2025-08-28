@@ -3,6 +3,8 @@ import {recipes} from './recipes.js';
 const searchInput = document.getElementById('searchInput');
 const searchBtn = document.getElementById('searchButton');
 
+const suggestionsBox = document.getElementById('suggestionsBox');
+
 const message = document.getElementById('message');
 
 const recipeDetails = document.getElementById('recipeDetails');
@@ -41,35 +43,32 @@ async function fetchRecipe(title) {
   });
 }
 
-
-function generateRecipeHTML() {
+async function generateRecipeHTML() {
   message.innerHTML = 'Loading...';
   message.classList.remove('hidden');
+  
+  const title = searchInput.value.trim();
+  
+  const recipe = await fetchRecipe(title);
 
-  setTimeout( async () => {
-    const title = searchInput.value.trim();
-    
-    const recipe = await fetchRecipe(title);
+  recipeImg.src = recipe.imageSrc;
+  recipeTitle.textContent = recipe.title;
+  recipeDescription.textContent = recipe.description;
 
-    recipeImg.innerHTML = recipe.image;
-    recipeTitle.textContent = recipe.title;
-    recipeDescription.textContent = recipe.description;
+  ingredientsList.innerHTML = "";
+  recipe.ingredients.forEach((ingredient) => {
+    ingredientsList.innerHTML += `<li class="ingredient-item">${ingredient}</li>`;
+  });
 
-    ingredientsList.innerHTML = "";
-    recipe.ingredients.forEach((ingredient) => {
-      ingredientsList.innerHTML += `<li class="ingredient-item">${ingredient}</li>`;
-    });
-
-    instructionsList.innerHTML = "";
-    recipe.steps.forEach((step) => {
-      instructionsList.innerHTML += `<li class="instruction-step">${step}</li>`;
-    });
-    
-    message.classList.add('hidden');
-    recipeDetails.classList.remove('hidden');
-  }, 500);
+  instructionsList.innerHTML = "";
+  recipe.steps.forEach((step) => {
+    instructionsList.innerHTML += `<li class="instruction-step">${step}</li>`;
+  });
+  
+  message.classList.add('hidden');
+  recipeDetails.classList.remove('hidden');
+  
 }
-
 
 searchBtn.addEventListener('click', () => {
   recipeDetails.classList.add('hidden');
@@ -84,19 +83,19 @@ document.addEventListener('keydown', (event) => {
 });
 
 randomRecipe.addEventListener('click', () => {
-  const randomNumber = Math.round(Math.random() * recipes.length);
-  
+  const randomNumber = Math.floor(Math.random() * recipes.length);
   
   recipeDetails.classList.add('hidden');
   message.innerHTML = 'Loading...';
   message.classList.remove('hidden');
+  suggestionsBox.classList.add('hidden');
 
   setTimeout( async () => {
     const title = recipes[randomNumber].title;
     
     const recipe = await fetchRecipe(title);
     
-    recipeImg.innerHTML = recipe.image;
+    recipeImg.src = recipe.imageSrc;
     recipeTitle.textContent = recipe.title;
     recipeDescription.textContent = recipe.description;
 
@@ -112,5 +111,71 @@ randomRecipe.addEventListener('click', () => {
     
     message.classList.add('hidden');
     recipeDetails.classList.remove('hidden');
+
+    searchInput.value = recipe.title;
   }, 500);
+});
+
+async function fetchSuggestions(userInput) {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      const matches = recipes.filter((recipe) => {
+        return recipe.title.toLowerCase().includes(userInput.toLowerCase());
+      });
+
+      if (!userInput) {
+        suggestionsBox.classList.add('hidden');
+        resolve([]);
+      } else if (matches.length === 0) {
+        suggestionsBox.classList.add('hidden');
+        suggestionsBox.innerHTML = '';
+        reject('No recipe found');
+      } else {
+        resolve(matches);
+      }
+    }, 200);
+  });
+}
+
+async function generateSuggestionsHTML() {
+  const userInput = searchInput.value.trim();
+
+  let suggestions = '';
+  suggestions = await fetchSuggestions(userInput);
+
+  suggestionsBox.innerHTML = '';
+  suggestions.forEach((suggestion) => {
+    suggestionsBox.innerHTML += `<div id="suggestionItem" class="suggestion-item">${suggestion.title}</div>`;
+  });
+
+  document.querySelectorAll('#suggestionItem').forEach(item => {
+    item.addEventListener('click', () => {
+      searchInput.value = item.textContent;
+      suggestionsBox.innerHTML = ''; 
+      suggestionsBox.classList.add('hidden');
+      generateRecipeHTML();
+    });
+  });
+
+  
+  document.querySelectorAll('#suggestionItem').forEach((item) => {
+    item.addEventListener('mouseover', () => {
+      searchInput.value = item.textContent;
+    });
+  });
+}
+
+searchInput.addEventListener('input', () => {
+  const matches = recipes.filter((recipe) => {
+    return recipe.title.toLowerCase().includes(searchInput.value.toLowerCase());
+  });
+
+  recipeDetails.classList.add('hidden');
+
+  if (matches || searchInput.value === "") {
+    setTimeout(() => {
+      suggestionsBox.classList.remove('hidden');
+    }, 200);
+  }
+  generateSuggestionsHTML();
 });

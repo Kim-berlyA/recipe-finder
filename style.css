@@ -10,6 +10,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   background: #e3e3e3;
   overflow-y: scroll;
+  position: relative;
 }
 
 .app {
@@ -65,6 +66,7 @@ body {
   outline: none;
   border: none;
   min-width: 0;
+  flex-grow: 1;
 }
 
 .search:focus,
@@ -87,6 +89,32 @@ body {
   height: 20px;
 }
 
+.suggestions {
+  color: #fff;
+  position: absolute;
+  top: 70%;
+  background-color: #000000;
+  width: 200px;
+  max-height: 200px;
+  overflow-y: auto;
+  z-index: 99;
+  border-radius: 0.625rem;
+  padding: .3rem;
+}
+
+.suggestion-item {
+  padding: .3rem;
+  border-radius: 0.425rem;
+  margin: .3rem;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: all .1s ease-in;
+}
+
+.suggestion-item:hover {
+  background-color: #555;
+}
+
 .random-recipe-button {
   font-size: 1rem;
   color: white;
@@ -98,14 +126,15 @@ body {
   background: linear-gradient(135deg, #ff7a18, #f34408);
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   transition: all .2s ease-in;
+  cursor: pointer;
 }
 
 .random-recipe-button:hover {
-  transform: translateY(-2px);
+  transform: translateY(0px);
 }
 
 .random-recipe-button:active {
-  transform: translateY(0px);
+  transform: translateY(2px);
 }
 
 .message {
@@ -126,7 +155,7 @@ body {
 }
 
 .recipe-img {
-  width: 50%;
+  width: min(250px, 100%);
   height: auto;
   border-radius: 5px;
 }

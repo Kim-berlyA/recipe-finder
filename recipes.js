@@ -1,7 +1,7 @@
 export const recipes = [  
   //SWALLOWS, SOUPS, STEWS AND SAUCES
   { 
-    image: '<img src="img/ogbono.jpg" alt="food" id="recipeImg" class="recipe-img" />',
+    imageSrc: "img/ogbono.jpg",
     title: "Ogbono Soup", 
     description: "Draw soup made with ogbono seeds and okra, very thick and slippery, great with pounded yam, eba or fufu.", 
     ingredients: [ 
@@ -28,7 +28,7 @@ export const recipes = [
     ] 
   },
   { 
-    image: '<img src="img/egusi.jpg" alt="food" id="recipeImg" class="recipe-img" />', 
+    imageSrc: "img/egusi.jpg", 
     title: "Egusi Soup",
     description: "A thick soup made from melon seeds, often cooked with leafy vegetables and assorted meats.",
     ingredients: [
@@ -49,7 +49,7 @@ export const recipes = [
     ]
   }, 
   { 
-    image: '<img src="img/efo.jpeg" alt="food" id="recipeImg" class="recipe-img" />', 
+    imageSrc: "img/efo.jpeg", 
     title: "Efo Riro", 
     description: "A savory Yoruba spinach-based vegetable soup, full of beef, seafood, peppers and traditional flavorings.", 
     ingredients: [ 
@@ -73,7 +73,7 @@ export const recipes = [
     ] 
   }, 
   { 
-    image: '<img src="img/banga.jpeg" alt="food" id="recipeImg" class="recipe-img" />', 
+    imageSrc: "img/banga.jpeg", 
     title: "Banga Soup", 
     description: "Delta State palm fruit kernel soup flavored with unique 'banga spice', typically eaten with starch, fufu or eba.", 
     ingredients: [ 
@@ -94,7 +94,7 @@ export const recipes = [
     ] 
   },
   { 
-    image: '<img src="img/nsala.jpeg" alt="food" id="recipeImg" class="recipe-img" />', 
+    imageSrc: "img/nsala.jpeg", 
     title: "Nsala (White Soup)", 
     description: "A light yam-thickened soup traditionally made with catfish.", 
     ingredients: [ 
@@ -111,7 +111,7 @@ export const recipes = [
     ] 
   },
   { 
-    image: '<img src="img/oha.jpeg" alt="food" id="recipeImg" class="recipe-img" />', 
+    imageSrc: "img/oha.jpeg", 
     title: "Oha Soup", 
     description: "A southern Nigerian delicacy with oha leaves, cocoyam and meats, served with eba or fufu.", 
     ingredients: [ 
@@ -139,7 +139,7 @@ export const recipes = [
     ]
   }, 
   { 
-    image: '<img src="img/mixed-okra.jpeg" alt="food" id="recipeImg" class="recipe-img" />', 
+    imageSrc: "img/mixed-okra.jpeg", 
     title: "Mixed Okra Soup (Ila Alasepo)", 
     description: "Yoruba-style 'Ila-alasepo', a mixed okra soup with assorted meat and fish, enjoyed with Nigerian swallow foods.", 
     ingredients: [ 
@@ -162,7 +162,7 @@ export const recipes = [
     ] 
   },
   { 
-    image: '<img src="img/ofada-stew.jpeg" alt="food" id="recipeImg" class="recipe-img" />', 
+    imageSrc: "img/ofada-stew.jpeg", 
     title: "Ofada Stew (Ayamase)", 
     description: "Fiery green/brown pepper stew cooked in bleached palm oil, paired with Ofada rice.", 
     ingredients: [ 
@@ -180,7 +180,7 @@ export const recipes = [
     ] 
   }, 
   { 
-    image: '<img src="img/nkwobi.jpg" alt="food" id="recipeImg" class="recipe-img" />', 
+    imageSrc: "img/nkwobi.jpg", 
     title: "Nkwobi with Cow leg", 
     description: "Rich, spicy cow leg sauce served in a traditional bowl, a delicacy from Eastern Nigeria.", 
     ingredients: [ 
@@ -205,7 +205,7 @@ export const recipes = [
     ] 
   }, 
   { 
-    image: '<img src="img/cat-fish.jpeg" alt="food" id="recipeImg" class="recipe-img" />', 
+    imageSrc: "img/cat-fish.jpeg", 
     title: "Cat Fish Pepper Soup", 
     description: "A warming, spicy Nigerian soup made with catfish and assorted meats and distinct traditional spices.", 
     ingredients: [ 
@@ -236,7 +236,7 @@ export const recipes = [
     ] 
   },
   { 
-    image: '<img src="img/edikaikong.jpeg" alt="food" id="recipeImg" class="recipe-img" />', 
+    imageSrc: "img/edikaikong.jpeg", 
     title: "Edikaikong", 
     description: "Calabar’s famous vegetable soup brimming with assorted meat, seafood and native leafy greens, perfect with pounded yam.", 
     ingredients: [ 
@@ -266,7 +266,7 @@ export const recipes = [
     ] 
   }, 
   { 
-    image: '<img src="img/ofe-onugbu.jpg" alt="food" id="recipeImg" class="recipe-img" />', 
+    imageSrc: "img/ofe-onugbu.jpg", 
     title: "Ofe Onugbu", 
     description: "A hearty Igbo bitterleaf soup thickened with cocoyam and palm kernel, served with eba or fufu.", 
     ingredients: [ 
@@ -295,7 +295,7 @@ export const recipes = [
     ] 
   }, 
   { 
-    image: '<img src="img/fufu.jpg" alt="food" id="recipeImg" class="recipe-img" />', 
+    imageSrc: "img/fufu.jpg", 
     title: "Fufu", 
     description: "Fermented cassava dough with a sour taste.", 
     ingredients: ["Fufu flour or fermented cassava paste"], 
@@ -305,7 +305,7 @@ export const recipes = [
     ] 
   }, 
   { 
-    image: '<img src="img/amala.jpg" alt="food" id="recipeImg" class="recipe-img" />', 
+    imageSrc: "img/amala.jpg", 
     title: "Amala, Gbegiri, Ewedu and Stew", 
     description: "A Yoruba classic: amala (yam flour) paired with creamy bean (gbegiri) soup, slippery ewedu, and spicy stew.", 
     ingredients: [ 
@@ -334,7 +334,7 @@ export const recipes = [
     ] 
   }, 
   { 
-    image: '<img src="img/semo.jpeg" alt="food" id="recipeImg" class="recipe-img" />', 
+    imageSrc: "img/semo.jpeg", 
     title: "Semovita", 
     description: "Light, smooth swallow made from semolina.", 
     ingredients: ["Semolina flour", "Hot water"], 
@@ -346,7 +346,7 @@ export const recipes = [
 
   // RICE DISHES 
   { 
-    image: '<img src="img/ofada-rice.jpeg" alt="food" id="recipeImg" class="recipe-img" />', 
+    imageSrc: "img/ofada-rice.jpeg", 
     title: "Ofada rice with Sauce", 
     description: "Native Ofada rice served with spicy, richly flavored sauce loaded with assorted meats and seafood.", 
     ingredients: [ 
@@ -372,7 +372,7 @@ export const recipes = [
     ] 
   }, 
   { 
-    image: '<img src="img/jollof-rice.jpeg" alt="food" id="recipeImg" class="recipe-img" />', 
+    imageSrc: "img/jollof-rice.jpeg", 
     title: "Jollof Rice", 
     description: "A vibrant, spicy tomato rice dish central to Nigerian parties, often served with various proteins and fried plantain.", 
     ingredients: [ 
@@ -405,7 +405,7 @@ export const recipes = [
     ] 
   }, 
   { 
-    image: '<img src="img/coconut-rice.jpeg" alt="food" id="recipeImg" class="recipe-img" />', 
+    imageSrc: "img/coconut-rice.jpeg", 
     title: "Coconut Rice with Grilled Chicken", 
     description: "A festive rice dish cooked in coconut extract, garnished with chicken and seafood, loved at parties.", 
     ingredients: [ 
@@ -433,7 +433,7 @@ export const recipes = [
     ] 
   }, 
   { 
-    image: '<img src="img/fried-rice.jpg" alt="food" id="recipeImg" class="recipe-img" />', 
+    imageSrc: "img/fried-rice.jpg", 
     title: "Fried Rice", 
     description: "Stir-fried rice with vegetables, liver, and spices.", 
     ingredients: [ 
@@ -451,7 +451,7 @@ export const recipes = [
 
   //SNACKS
   { 
-    image: '<img src="img/puff-puff.jpeg" alt="food" id="recipeImg" class="recipe-img" />', 
+    imageSrc: "img/puff-puff.jpeg", 
     title: "Puff-Puff", 
     description: "Sweet fried dough balls, soft inside and golden outside.", 
     ingredients: [ 
@@ -468,7 +468,7 @@ export const recipes = [
     ] 
   }, 
   { 
-    image: '<img src="img/akara.jpeg" alt="food" id="recipeImg" class="recipe-img" />', 
+    imageSrc: "img/akara.jpeg", 
     title: "Akara", 
     description: "Fried bean cakes, crispy outside and soft inside.", 
     ingredients: [ 
@@ -482,7 +482,7 @@ export const recipes = [
     ] 
   }, 
   { 
-    image: '<img src="img/bole.jpg" alt="food" id="recipeImg" class="recipe-img" />', 
+    imageSrc: "img/bole.jpg", 
     title: "Bole", 
     description: "Charcoal-grilled plantain often served with groundnut sauce.", 
     ingredients: ["Ripe or semi-ripe plantains"], 
@@ -492,7 +492,7 @@ export const recipes = [
     ] 
   },
   { 
-    image: '<img src="img/suya.jpeg" alt="food" id="recipeImg" class="recipe-img" />', 
+    imageSrc: "img/suya.jpeg", 
     title: "Suya", 
     description: "Spicy beef skewers coated with yaji spice, grilled over open flame.", 
     ingredients: [ 
@@ -506,7 +506,7 @@ export const recipes = [
     ] 
   }, 
   { 
-    image: '<img src="img/meat-pie.jpeg" alt="food" id="recipeImg" class="recipe-img" />', 
+    imageSrc: "img/meat-pie.jpeg", 
     title: "Meat Pie", 
     description: "Buttery pastry filled with minced beef and vegetables.", 
     ingredients: [ 
@@ -521,7 +521,7 @@ export const recipes = [
     ] 
   }, 
   { 
-    image: '<img src="img/chin-chin.jpg" alt="food" id="recipeImg" class="recipe-img" />', 
+    imageSrc: "img/chin-chin.jpg", 
     title: "Chin Chin", 
     description: "Crunchy sweet fried dough snack.", 
     ingredients: [ 
@@ -537,7 +537,7 @@ export const recipes = [
 
   //PROTEINS AND SIDES
   { 
-    image: '<img src="img/moi-moi.jpg" alt="food" id="recipeImg" class="recipe-img" />', 
+    imageSrc: "img/moi-moi.jpg", 
     title: "Moi Moi (Beans Cake)", 
     description: "Classic steamed bean pudding with vegetables and protein, loved for breakfast or as a party meal in Nigeria.", 
     ingredients: [ 
@@ -564,7 +564,7 @@ export const recipes = [
     ] 
   }, 
   { 
-    image: '<img src="img/asun.jpeg" alt="food" id="recipeImg" class="recipe-img" />', 
+    imageSrc: "img/asun.jpeg", 
     title: "Asun (Goat Meat Barbeque)", 
     description: "Traditional spicy, smoky goat meat barbeque often cooked for celebrations; goes well with chilled drinks.", 
     ingredients: [ 
@@ -585,7 +585,7 @@ export const recipes = [
     ] 
   }, 
   { 
-    image: '<img src="img/isi-ewu.jpg" alt="food" id="recipeImg" class="recipe-img" />', 
+    imageSrc: "img/isi-ewu.jpg", 
     title: "Isiewu (Spicy Goat Head)", 
     description: "Spicy goat head delicacy, often served as a sauce or with peppersoup in the east of Nigeria.", 
     ingredients: [ 
@@ -606,7 +606,7 @@ export const recipes = [
     ] 
   },
   { 
-    image: '<img src="img/beans.jpeg" alt="food" id="recipeImg" class="recipe-img" />', 
+    imageSrc: "img/beans.jpeg", 
     title: "Beans Porridge (Ewa Riro)", 
     description: "Slow-cooked beans in palm oil and pepper sauce.", 
     ingredients: [ 
@@ -624,7 +624,7 @@ export const recipes = [
 
   //OTHERS
   { 
-    image: '<img src="img/yam-porridge.jpeg" alt="food" id="recipeImg" class="recipe-img" />', 
+    imageSrc: "img/yam-porridge.jpeg", 
     title: "Yam Porridge", 
     description: "A filling and hearty Nigerian yam alternative to plantain porridge, spiced with vegetables and seafood.", 
     ingredients: [ 
@@ -635,7 +635,7 @@ export const recipes = [
     ] 
   },
   { 
-    image: '<img src="img/plantain-porridge.jpg" alt="food" id="recipeImg" class="recipe-img" />', 
+    imageSrc: "img/plantain-porridge.jpg", 
     title: "Unripe/Green Plantain Porridge", 
     description: "A healthy, vitamin-rich one-pot porridge of unripe plantain, shrimps, snails, veggies and spices for all ages.", 
     ingredients: [ 
@@ -662,7 +662,7 @@ export const recipes = [
     ] 
   },
   { 
-    image: '<img src="img/spaghetti.jpg" alt="food" id="recipeImg" class="recipe-img" />', 
+    imageSrc: "img/spaghetti.jpg", 
     title: "Jollof Spaghetti", 
     description: "Spaghetti cooked in a tomato sauce", 
     ingredients: [ 
