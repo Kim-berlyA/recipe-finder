@@ -72,6 +72,7 @@ async function generateRecipeHTML() {
 
 searchBtn.addEventListener('click', () => {
   recipeDetails.classList.add('hidden');
+  suggestionsBox.classList.add('hidden');
   generateRecipeHTML();
 });
 
