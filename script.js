@@ -78,7 +78,6 @@ searchBtn.addEventListener('click', () => {
 document.addEventListener('keydown', (event) => {
   if (event.key === 'Enter') {
     recipeDetails.classList.add('hidden');
-    suggestionsBox.classList.add('hidden');
     generateRecipeHTML();
   }
 });
